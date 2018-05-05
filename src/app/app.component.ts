@@ -9,7 +9,9 @@ export class AppComponent implements OnInit {
   title = 'app';
   jsonFormOptions = { addSubmit: false };
 
-  jsonSchemaJson = {
+  // results in data:
+  // {schema: [{description: string, name: string}]}
+  jsonSchemaJson: any = {
     type: 'object',
     properties: {
       schema: {
@@ -32,7 +34,9 @@ export class AppComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.jsonSchemaJson.data = {};
+  }
 
   onSubmit(event) {
     console.log('onSubmit event', event);
