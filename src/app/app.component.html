@@ -18,3 +18,11 @@
   </li>
 </ul>
 
+<json-schema-form
+  loadExternalAssets="true"
+  [form]="jsonSchemaJson"
+  [options]="jsonFormOptions"
+  [ngModel]="jsonSchemaJson?.data"
+  (ngModelChange)="onSubmit($event)">
+</json-schema-form>
+
