@@ -1,1 +1,23 @@
+.my-drop-zone {
+  border: dashed 2px lightgray;
+  padding: 24px;
+}
 
+.nv-file-over {
+  border-color: green;
+}
+
+.button-container {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.hidden-file-chooser {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.green-text {
+  color: green;
+}

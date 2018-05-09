@@ -8,13 +8,62 @@
 <h2>Here are some links to help you start: </h2>
 <ul>
   <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+    <h2>
+      <a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a>
+    </h2>
   </li>
   <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
+    <h2>
+      <a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a>
+    </h2>
   </li>
   <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+    <h2>
+      <a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a>
+    </h2>
   </li>
 </ul>
 
+<!-- <div class="drop-container" ngFileDrop [options]="options" (uploadOutput)="onUploadOutput($event)" [uploadInput]="uploadInput"
+  [ngClass]="{ 'is-drop-over': dragOver }">
+  <h1>Drag &amp; Drop</h1>
+</div>
+
+<label class="upload-button">
+  <input type="file" ngFileSelect [options]="options" (uploadOutput)="onUploadOutput($event)" [uploadInput]="uploadInput" multiple> or choose file(s)
+</label>
+
+<button type="button" class="start-upload-btn" (click)="startUpload()">
+  Start Upload
+</button> -->
+
+<div class="container">
+  <div class="columns is-multiline">
+    <div class="column is-8 is-offset-2">
+      <div class="drop-container" ngFileDrop [options]="options" (uploadOutput)="onUploadOutput($event)" [uploadInput]="uploadInput"
+        [ngClass]="{ 'nv-file-over': dragOver$ | async }">
+        <p>
+          Drag a file here or
+          <label class="upload-button">
+            <input type="file" ngFileSelect [options]="options" (uploadOutput)="onUploadOutput($event)" [uploadInput]="uploadInput" multiple> browse
+          </label>
+          to upload.
+        </p>
+      </div>
+    </div>
+    <div class="column is-8 is-offset-2">
+      <div class="upload-items">
+        <div class="upload-item" *ngFor="let f of files; let i = index;">
+          <span class="filename">
+            <span>{{ f.name }} ({{ f.id }}) - {{ f.progress?.data?.percentage }}%</span>
+            <span>uploading with {{ f.progress?.data?.speedHuman }}</span>
+            <span>ETA {{ f.progress?.data?.etaHuman }}</span>
+          </span>
+          <div class="progress">
+            <span class="bar" [style.width]="f?.progress?.data?.percentage + '%'"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
