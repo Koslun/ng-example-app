@@ -3826,11 +3826,11 @@ next-tick@1:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
 
-ng-intercom@^1.0.0-beta.13:
+ng-intercom@koslun/ng-intercom#641d32430d91c259e76f9f8ebef255675a3a63ef:
   version "1.0.0-beta.13"
-  resolved "https://registry.yarnpkg.com/ng-intercom/-/ng-intercom-1.0.0-beta.13.tgz#aa90c9299a7d042887f5e3d32b2eecc53eea0a91"
+  resolved "https://codeload.github.com/koslun/ng-intercom/tar.gz/641d32430d91c259e76f9f8ebef255675a3a63ef"
   dependencies:
-    tslib "^1.7.1"
+    tslib "^1.9.0"
 
 no-case@^2.2.0:
   version "2.3.2"
@@ -4916,10 +4916,6 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
-rxjs-compat@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/rxjs-compat/-/rxjs-compat-6.1.0.tgz#935059623ee4c167728c9dd03ee6e4468cc5b583"
-
 rxjs@^6.0.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.1.0.tgz#833447de4e4f6427b9cec3e5eb9f56415cd28315"
@@ -5746,7 +5742,7 @@ tsickle@^0.27.2:
     source-map "^0.6.0"
     source-map-support "^0.5.0"
 
-tslib@^1.7.1, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
+tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.0.tgz#e37a86fda8cbbaf23a057f473c9f4dc64e5fc2e8"
 
