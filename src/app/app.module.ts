@@ -12,8 +12,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     IntercomModule.forRoot({
       appId: environment.intercomAppId, // from your Intercom config
-      updateOnRouterChange: true // will automatically run `update` on router event changes. Default: `false`
-    })
+      updateOnRouterChange: false, // will automatically run `update` on router event changes. Default: `false`
+    }),
     BrowserAnimationsModule,
   ],
   providers: [],
